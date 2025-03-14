@@ -1,0 +1,147 @@
+.footer {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 3rem 0 1rem;
+  }
+  
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 0 1.5rem;
+  }
+  
+  .footer-section {
+    margin-bottom: 1.5rem;
+  }
+  
+  .footer-logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #f8c40c;
+    margin-bottom: 0.8rem;
+  }
+  
+  .footer-description {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 1.2rem;
+    color: #ddd;
+  }
+  
+  .social-links {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    transition: all 0.3s ease;
+  }
+  
+  .social-link:hover {
+    background-color: #f8c40c;
+    color: #000;
+  }
+  
+  .footer-section h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1.2rem;
+    position: relative;
+    padding-bottom: 0.5rem;
+  }
+  
+  .footer-section h3:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 50px;
+    height: 2px;
+    background-color: #f8c40c;
+  }
+  
+  .footer-links,
+  .contact-info,
+  .opening-hours {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-links li,
+  .contact-info li,
+  .opening-hours li {
+    margin-bottom: 0.8rem;
+  }
+  
+  .footer-links a {
+    color: #ddd;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-links a:hover {
+    color: #f8c40c;
+  }
+  
+  .contact-info li {
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .contact-info i {
+    margin-right: 0.8rem;
+    color: #f8c40c;
+    min-width: 20px;
+  }
+  
+  .opening-hours li {
+    display: flex;
+    justify-content: space-between;
+    color: #ddd;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 0.9rem;
+    color: #999;
+  }
+  
+  @media (max-width: 768px) {
+    .footer-container {
+      grid-template-columns: 1fr;
+    }
+    
+    .social-links {
+      justify-content: center;
+    }
+    
+    .footer-section h3:after {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    
+    .footer-section {
+      text-align: center;
+    }
+    
+    .contact-info li {
+      justify-content: center;
+    }
+    
+    .opening-hours li {
+      justify-content: space-around;
+    }
+  }
